@@ -3,7 +3,7 @@ var login = require('./lib/login');
 var Session = require('./lib/session');
 var request = require('./lib/request');
 var Tunnel = require('./lib/tunnel');
-
+// 封装好的SDK
 var exports = module.exports = {
     login: login.login,
     setLoginUrl: login.setLoginUrl,
