@@ -18,8 +18,10 @@ var exports = module.exports = {
 };
 
 // 导出错误类型码
-Object.keys(constants).forEach(function (key) {
+Object.keys(constants).forEach(function(key) {
+    // 找到以ERR打头的
     if (key.indexOf('ERR_') === 0) {
+        // 赋值
         exports[key] = constants[key];
     }
 });
